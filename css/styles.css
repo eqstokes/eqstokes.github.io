@@ -1,0 +1,117 @@
+/******************************************************************************
+ * Module 2 Coding Assignment
+ * Erika Stokes
+ *****************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+#section1 {
+    background: #c7c1dd;
+}
+
+    #section1 h2 {
+        background: #6B5CA5;
+    }
+
+#section2 {
+    background: #f1c0e4;
+}
+
+    #section2 h2 {
+        background: #72195A;
+    }
+
+#section3 {
+    background: #d0e3fc;
+}
+
+    #section3 h2 {
+        background: #297df3;
+    }
+
+.menuCategory {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.menuCategory h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .25rem 2rem;
+    color: #ffffff;
+    float: right;
+    border: 1px solid black;
+}
+
+.menuCategory p {
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #section1 {
+        width: calc(50% - .5rem);
+        margin-right: 1rem;
+        float: left;
+    }
+
+    #section2 {
+        width: calc(50% - .5rem);
+        float: left;
+    }
+
+    #section3 {
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #section1 {
+        width: calc(33% - .66rem);
+        margin-right: 1rem;
+        float: left;
+    }
+
+    #section2 {
+        width: calc(33% - .66rem);
+        margin-right: 1rem;
+        float: left;
+    }
+
+    #section3 {
+        width: calc(33% - .66rem);
+        float: left;
+        clear: none;
+    }
+}
