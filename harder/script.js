@@ -36,17 +36,13 @@ WARNING!!! WARNING!!!
 
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-
-
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
 for ( let i = 0; i < names.length; i++) {
 
-    speakHello(names[i]);
-
-  // STEP 11:
+   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
   // Use the string object's 'charAt' function. Since we are looking for
   // names that start with either upper case or lower case 'J'/'j', call
@@ -56,17 +52,18 @@ for ( let i = 0; i < names.length; i++) {
   // var firstLetter =
 
     const index = 0;
-    var firstLetter = names[i].toLowerCase.charAt(index);
+    var firstLetter = names[i].charAt(0).toLowerCase();
 
-    console.log(firstLetter);
+    // This is a comment.
+    
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (firstLetter == 'j') {
-    helloSpeaker.speak(names[i]);
+    byeSpeaker.speak(names[i]);
   } else {
-    // helloSpeaker.xxxx
- }
+    helloSpeaker.speak(names[i]);
+  }
 }
